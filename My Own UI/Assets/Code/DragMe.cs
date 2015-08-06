@@ -22,7 +22,7 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
 		NameStore = this.name;
 		Debug.Log ("Name Store" + NameStore);
-		CreatureName.GetComponent<DropMe> ().name = NameStore;
+		CreatureName.GetComponent<DropMe> ().StoreName = NameStore;
 		var canvas = FindInParents<Canvas>(gameObject);
 		if (canvas == null)
 			return;
@@ -48,11 +48,13 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 			m_DraggingPlane = transform as RectTransform;
 		else
 			m_DraggingPlane = canvas.transform as RectTransform;
-		
+
+		//change the position by local scale
+		eventData.position = new Vector3 (eventData.position.x, eventData.position.y) / GameObject.FindObjectOfType<Canvas> ().GetComponent<RectTransform> ().localScale.x;
 		SetDraggedPosition(eventData);
 	}
 
-	public void OnDrag(PointerEventData data)
+	public void OnDrag(PointerEventData data) 
 	{
 		if (m_DraggingIcon != null)
 			SetDraggedPosition (data);

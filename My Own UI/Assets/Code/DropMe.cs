@@ -29,7 +29,7 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 	private Vector3 mousepos;
 
 	public GameObject creature;
-	public string name;
+	public string StoreName;
 
 
 	public void OnEnable ()
@@ -50,77 +50,77 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 		
 	
 			//mousepos = new Vector3 (data.position.x, data.position.y, 0) - mousepress;
-			if(name == "Copepod"){
+			if(StoreName == "Copepod"){
 				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
 				Active = Instantiate (Copepod, mousepos, transform.rotation) as GameObject;
 				Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);	
 			}
-			if(name == "Urchin"){
+			if(StoreName == "Urchin"){
 				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
 				Active = Instantiate (Urchin, mousepos, transform.rotation) as GameObject;
 				Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);	
 			}
-			if(name == "Shrimp"){
+			if(StoreName == "Shrimp"){
 				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
 				Active = Instantiate (Shrimp, mousepos, transform.rotation) as GameObject;
 				Active.transform.localScale = new Vector3 (0.4f, 0.4f, 0.4f);
 			}
-			if(name == "Crab"){
+			if(StoreName == "Crab"){
 				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
 				Active = Instantiate (Crab, mousepos, transform.rotation) as GameObject;
 				Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
 			}
-			if(name == "Bogue"){
+			if(StoreName == "Bogue"){
 				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
 				Active = Instantiate (Bogue, mousepos, transform.rotation) as GameObject;
 				Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
 			}
-			if(name == "Star"){
+			if(StoreName == "Star"){
 				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
 				Active = Instantiate (Star, mousepos, transform.rotation) as GameObject;
 				Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
 			}
-			if(name == "Jelly"){
+			if(StoreName == "Jelly"){
 				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
 				Active = Instantiate (Jelly, mousepos, transform.rotation) as GameObject;
 				Active.transform.localScale = new Vector3 (0.4f, 0.4f, 0.4f);
 			}
-			if(name == "Octopus"){
-					mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
-					Active = Instantiate (Octopus, mousepos, transform.rotation) as GameObject;
-					Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
+			if(StoreName == "Octopus"){
+				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
+				Active = Instantiate (Octopus, mousepos, transform.rotation) as GameObject;
+				Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
 			}
-			if(name == "Squid"){
-			mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
-			Active = Instantiate (Squid, mousepos, transform.rotation) as GameObject;
-			Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
+			if(StoreName == "Squid"){
+				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
+				Active = Instantiate (Squid, mousepos, transform.rotation) as GameObject;
+				Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
 			}
-			if(name == "Bass"){
+			if(StoreName == "Bass"){
 				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
 				Active = Instantiate (Bass, mousepos, transform.rotation) as GameObject;
 				Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
 			}
-			if(name == "Turtle"){
+			if(StoreName == "Turtle"){
 				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
 				Active = Instantiate (Turtle, mousepos, transform.rotation) as GameObject;
 				Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
 			}
-			if(name == "Gulper"){
+			if(StoreName == "Gulper"){
 				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
 				Active = Instantiate (Gulper, mousepos, transform.rotation) as GameObject;
 				Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
 			}
-			if(name == "Tuna"){
+			if(StoreName == "Tuna"){
 				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
 				Active = Instantiate (Tuna, mousepos, transform.rotation) as GameObject;
 				Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
 			}
-			if(name == "Dolphin"){
+			if(StoreName == "Dolphin"){
 				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
 				Active = Instantiate (Dolphin, mousepos, transform.rotation) as GameObject;
 				Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
 			}
-			if(name == "Shark"){
+			if(StoreName == "Shark"){
 				mousepos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y,4.0f));
 				Active = Instantiate (Shark, mousepos, transform.rotation) as GameObject;
 				Active.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
