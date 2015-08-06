@@ -1,0 +1,121 @@
+fileFormatVersion: 2
+guid: d87179054a8e97b44a0fadf23e459469
+timeCreated: 1438771522
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BogueSS_0
+    21300002: BogueSS_1
+    21300004: BogueSS_2
+    21300006: BogueSS_3
+    21300008: BogueSS_4
+    21300010: BogueSS_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BogueSS_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 25
+        width: 517
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BogueSS_1
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 25
+        width: 520
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BogueSS_2
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 25
+        width: 516
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BogueSS_3
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 25
+        width: 475
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BogueSS_4
+      rect:
+        serializedVersion: 2
+        x: 2382
+        y: 18
+        width: 407
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BogueSS_5
+      rect:
+        serializedVersion: 2
+        x: 2969
+        y: 25
+        width: 476
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
