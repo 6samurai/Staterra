@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Code\ActiveStateToggler.cs" />
      <Compile Include="Assets\Code\DragMe.cs" />
      <Compile Include="Assets\Code\DragPanel.cs" />
      <Compile Include="Assets\Code\DropMe.cs" />

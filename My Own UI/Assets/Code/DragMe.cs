@@ -21,7 +21,6 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 	{
 
 		NameStore = this.name;
-		Debug.Log ("Name Store" + NameStore);
 		CreatureName.GetComponent<DropMe> ().StoreName = NameStore;
 		var canvas = FindInParents<Canvas>(gameObject);
 		if (canvas == null)
@@ -50,7 +49,8 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 			m_DraggingPlane = canvas.transform as RectTransform;
 
 		//change the position by local scale
-		eventData.position = new Vector3 (eventData.position.x, eventData.position.y) / GameObject.FindObjectOfType<Canvas> ().GetComponent<RectTransform> ().localScale.x;
+		eventData.position = new Vector3 (eventData.position.x, eventData.position.y) /   GameObject.FindObjectOfType<Canvas> ().GetComponent<RectTransform> ().localScale.x;
+		
 		SetDraggedPosition(eventData);
 	}
 
