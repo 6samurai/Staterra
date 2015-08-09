@@ -50,7 +50,9 @@
      <Compile Include="Assets\Code\DragMe.cs" />
      <Compile Include="Assets\Code\DragPanel.cs" />
      <Compile Include="Assets\Code\DropMe.cs" />
+     <Compile Include="Assets\Code\LogCounter.cs" />
      <Compile Include="Assets\Code\StartNewGame.cs" />
+     <Compile Include="Assets\Code\ToggleCheck.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
